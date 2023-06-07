@@ -99,7 +99,7 @@ namespace RaymonV2.Classes
             }
 
             Console.WriteLine("* * * * * * *");
-        }
+        } 
     }
     public struct MessageData
     {
