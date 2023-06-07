@@ -92,7 +92,7 @@ namespace RaymonV2.Classes
         public static void ShowName(string[] names)
         {
             Console.WriteLine("* * * * * * *");
-
+             
             foreach (var item in names)
             {
                 Console.WriteLine(item);
