@@ -9,7 +9,6 @@ namespace RaymonV2.Classes
 {
     public class Home
     {
-        public int myFlag = 1001 ;
         public static void Main()
         {
             var myFlag = 1001;
