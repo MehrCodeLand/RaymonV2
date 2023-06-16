@@ -10,21 +10,20 @@ namespace ReymonV2_2.Classes
     {
         public static void Main()
         {
-            var myFlag = 1001;
             
-            while(myFlag == 1001)
+            while(true)
             {
 
-                // data1 
-                Console.Write("enter first String: ");
+                // input-1 
+                Console.Write("First String[exit-0]: ");
                 var userData1 = Console.ReadLine();
 
                 // exit
                 if (userData1 == "0" || userData1 == "exit")
                     break;
 
-                // data2
-                Console.Write("enter secend String: ");
+                // input-2
+                Console.Write("Secend String: ");
                 var userData2 = Console.ReadLine();
 
                 // get patterns
@@ -50,15 +49,18 @@ namespace ReymonV2_2.Classes
 
     public class HelperMain
     {
+        // single responsibility
         public static string FindPatterns(string data )
         {
+            // pattern
             var pattern = "";
 
+            // a b c d
             for(int i = 0; i < data.Length; ++i)
             {
-                for (int j = 0; j < data.Length - 1 ; j++)
+                for (int j = i + 1; j < data.Length ; j++)
                 {
-                    if (data[j] == data[j + 1])
+                    if (data[i] == data[j])
                     {
                         pattern += "*";
                     }
@@ -70,12 +72,5 @@ namespace ReymonV2_2.Classes
             }
             return pattern;
         }
-    }
-
-    public struct MeesageData
-    {
-        public int ErrorId { get; set; }
-        public int SuccessId { get; set; }
-        public string Message { get; set; }
     }
 }

@@ -1,0 +1,22 @@
+wsws
+-*--*-
+
+1-
+arr[i] = w
+arr[j] = s
+--> - 
+
+2- 
+arr[i] = w
+arr[j] = w
+--> * 
+
+3-
+arr[i] = w
+arr[j] = s
+--> -
+=====
+1-2
+arr[i] = s
+arr[j] = w
+--> - 

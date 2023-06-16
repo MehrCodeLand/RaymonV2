@@ -39,10 +39,18 @@ namespace RaymonV2.Classes
         }
     }
 
+    /*
+     -100 -> The format is not correct
+    -120 -> Data not found
+    -500 -> exit
+    -200 -> Less than 15
+
+     */
     public class HelperHome
     {
         public static MessageData ValidateIndexOfArrey( string userInput )
         {
+            // best part
             var messageData = new MessageData();
 
             if (!Regex.Match(userInput, "^[0-9]*$").Success)
@@ -74,6 +82,7 @@ namespace RaymonV2.Classes
                 return messageData;
             }
 
+            
             messageData.SusscessId = 100;
             messageData.Message = "Done";
             return messageData;
